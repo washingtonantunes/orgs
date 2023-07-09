@@ -33,3 +33,7 @@ out/
 *.iml
 *.ipr
 *.iws
+
+.gradle
+**/build/
+!src/**/build/
