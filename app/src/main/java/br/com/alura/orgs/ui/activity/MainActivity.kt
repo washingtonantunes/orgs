@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Toast.makeText(this, "Bem Vindo ao Orgs!", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onResume() {
+        super.onResume()
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val dao = ProdutosDao()
         Log.i("MainActivity", "onCreate: ${dao.buscaTodos()}")
